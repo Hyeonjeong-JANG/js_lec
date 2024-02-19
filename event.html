@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo">몇 시지?</h1>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">
+      눌러봐
+    </button>
+    <button onclick="this.innerHTML=Date()">눌러봐2</button>
+    <button onclick="displayDate()">눌러봐3</button>
+
+    <script>
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
+  </body>
+</html>
